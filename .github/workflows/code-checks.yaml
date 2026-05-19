@@ -26,5 +26,5 @@ jobs:
     needs: [lock_file]
     steps:
       - uses: actions/checkout@v6
-      - uses: ./github/actions/setup
+      - uses: ./.github/actions/setup
       - run: uv run pyright .
